@@ -1,0 +1,28 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage2.master" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<%@ MasterType VirtualPath ="~/MasterPage2.master"%>
+
+<asp:Content ContentPlaceHolderID="head" runat="server">
+
+<asp:contentplaceholder id="jquery" runat="server"></asp:contentplaceholder>
+ 
+    
+</asp:Content>
+
+
+
+    <asp:Content  contentplaceholderid="Menu" runat="server">
+        <!DOCTYPE html>
+               <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:menu ID="menu" runat="server" DatasourceID="SiteMapDataSource1" StaticDisplayLevels="5" Orientation="horizontal" ForeColor="#FFBEDE" StaticMenuItemStyle-ItemSpacing="10px" RenderingMode="table">
+        </asp:menu>
+        
+    
+         <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </asp:Content>
+
+            
+       
+
